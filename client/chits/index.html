@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chits</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/css/ui.jqgrid.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.13.5/js/jquery.jqgrid.min.js"></script>
+    <script src="./chitsTable.js"></script>
+    <style>
+        .width {
+            width: 25%;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Chit Buddy</h1>
+        <p>We are here to simplify your ledger management...</p>
+    </div>
+    <div class="container">
+        <table id="list2"></table>
+        <div id="pager2"></div>
+    </div>
+    <div class="container width">
+        <form action="/chits" method="POST">
+            <div class="form-group">
+                <label for="chitNumber">Chit Number:</label>
+                <input type="text" id="chitNumber" name="chitNumber" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="Date" id="startDate" name="startDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date:</label>
+                <input type="Date" id="endDate" name="endDate" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="no_of_persons">No. of Persons:</label>
+                <input type="text" id="no_of_persons" name="no_of_persons" class="form-control">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

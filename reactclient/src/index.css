@@ -1,0 +1,119 @@
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to top right, #e6ffff 0%, #b3ffff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+h1,
+h2,
+p,
+ul,
+li,
+label {
+  font-family: 'Slabo 27px', serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+ul.header {
+  background-color: #33ccff;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 18px #6699ff;
+}
+ul.header li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background: linear-gradient(to bottom left, #ffffff 0%, #ccffff 100%);
+  box-shadow: 5px 5px 18px #99ffff;
+  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+  width: 75%;
+  margin: auto;
+  margin-top: 50px;
+  animation: content-grad 2 2s linear;
+  /* display: none; */
+}
+.animated-div {
+  width: 25%;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+table.minimalistBlack {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+table.minimalistBlack td,
+table.minimalistBlack th {
+  padding: 8px 6px;
+}
+table.minimalistBlack tbody td {
+  font-size: 13px;
+}
+table.minimalistBlack thead {
+  background: #33ccff;
+}
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+table.minimalistBlack tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+table.minimalistBlack tfoot td {
+  font-size: 14px;
+}
+table.minimalistBlack td:hover {
+  background: #ccffff;
+  box-shadow: 2px 1px 10px #33ccff;
+}
+div.button {
+  display: flex;
+  justify-content: flex-end;
+}
+button.size {
+  width: 50px;
+  height: 30px;
+  background: #33ccff;
+  border-radius: 5px;
+  font-family: 'Slabo 27px', serif;
+}
+
+button.formButton {
+  background: #33ccff;
+  font-family: 'Slabo 27px', serif;
+}
+
+@keyframes content-grad {
+  from {
+    background: linear-gradient(to bottom left, #ffffff 0%, #ccffff 100%);
+  }
+  to {
+    background: linear-gradient(to bottom left, #ffffff 0%, #ccffff 0%);
+  }
+}
